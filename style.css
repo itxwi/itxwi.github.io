@@ -1,0 +1,96 @@
+html { 
+    /* Color definition */
+    --bg-color-1: #ffffff;
+    --bar-color-1: #a4b5ff;
+    --blue_shade-1: #273C76;
+    --logo_bottom: #1800ad;
+    --logo_middle: #5170ff;
+    --logo_top: #38b6ff;
+    --black-2: #27272A; 
+}
+
+body {
+    background-color: var(--bg-color-1);
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.topbar {
+    background-color: var(--bar-color-1);
+    min-width: 100vw;
+    min-height: 4vh;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 4vw;
+    height: 4vw;
+    padding-left: 1vw;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.title {
+    min-width: 10vw;
+    height: 5vw;
+    display: flex;
+    padding-left: 2vw;
+    align-items: center;
+}
+
+.titlefont {
+    font-size: 3vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+}
+
+.mainsite {
+    background-color: var(--bg-color-1);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+    padding: 2vw;
+    gap: 2vw;
+}
+
+.calendar, .assignments,.tutors {
+    background-color: #fff;
+    border: 2px solid #273C76;
+    border-radius: 1vw;
+    min-height: 40vh;
+    min-width: 30vw;
+    display: flex;
+    margin-bottom: 2vw;
+    padding: 0;
+    position: relative;
+}
+
+.calendar iframe, .cardinfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    padding-top: 9%;
+    border-radius: 1vw; 
+    border: 0;
+}
+
+.cardtitle {
+    position: absolute;
+    background-color: var(--blue_shade-1);
+    margin-top: .01vh;
+    border-radius: 1vw;
+    width: 100%;
+    font-size: 1vh;
+    height: 9%;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+}
